@@ -60,4 +60,11 @@ buttonNext.addEventListener("click", () => {
   new Audio("../audio/tik.mp3").play();
 });
 
+n = 0;
+window.addEventListener("click", () => {
+  if (n == 0) {
+    new Audio("../audio/Opening.mp3").play();
+    n++;
+  }
+});
 renderPokemon(searchPokemon);
